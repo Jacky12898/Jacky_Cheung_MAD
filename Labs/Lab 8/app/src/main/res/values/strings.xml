@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab 8</string>
+    <string name="enterLocation">Location Name:</string>
+    <string name="confirm">Is this the location you want to search?</string>
+    <string name="enter">Enter</string>
+    <string name="search">Search</string>
+</resources>
