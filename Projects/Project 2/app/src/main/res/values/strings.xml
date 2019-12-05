@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Project 2</string>
+    <string name="appTitle">UI Puzzle</string>
+    <string name="levelOne">Level 1</string>
+    <string name="levelTwo">Level 2</string>
+    <string name="exit">Exit</string>
     <string name="text">Move me into the box!</string>
     <string name="rotateButton">Rotate</string>
     <string name="moveButton">Move</string>

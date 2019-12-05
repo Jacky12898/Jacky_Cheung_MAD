@@ -6,77 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text"
+
+    <Button
+        android:id="@+id/levelOneButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/box"
-        android:layout_width="50dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/box"
+        android:layout_marginTop="240dp"
+        android:text="@string/levelOne"
+        android:background="@color/newColorPrimaryDark"
+        android:onClick="StartLevelOne"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/rotateButton"
+        android:id="@+id/levelTwoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="50dp"
-        android:onClick="rotate"
-        android:text="@string/rotateButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/moveButton"
-        app:layout_constraintTop_toBottomOf="@+id/rotateSwitch" />
-
-    <Switch
-        android:id="@+id/rotateSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="102dp"
+        android:text="@string/levelTwo"
+        android:background="@color/newColorPrimaryDark"
+        android:onClick="StartLevelTwo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text" />
-
-    <CheckBox
-        android:id="@+id/checkBoxVertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:onClick="checkBoxes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/box" />
-
-    <CheckBox
-        android:id="@+id/checkBoxHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:onClick="checkBoxes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxVertical" />
+        app:layout_constraintTop_toBottomOf="@+id/levelOneButton" />
 
     <Button
-        android:id="@+id/moveButton"
+        android:id="@+id/exitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
-        android:text="@string/moveButton"
-        android:onClick="move"
+        android:text="@string/exit"
+        android:background="@color/newColorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rotateSwitch" />
+        app:layout_constraintTop_toBottomOf="@+id/levelTwoButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
