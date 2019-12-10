@@ -35,6 +35,7 @@
         android:layout_marginEnd="50dp"
         android:onClick="rotate"
         android:text="@string/rotateButton"
+        android:background="@color/newColorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/moveButton"
         app:layout_constraintTop_toBottomOf="@+id/rotateSwitch" />
@@ -76,6 +77,7 @@
         android:layout_marginTop="30dp"
         android:text="@string/moveButton"
         android:onClick="move"
+        android:background="@color/newColorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rotateSwitch" />
 
