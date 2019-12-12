@@ -7,4 +7,9 @@
     <string name="text">Move me into the box!</string>
     <string name="rotateButton">Rotate</string>
     <string name="moveButton">Move</string>
+    <string name="west">W</string>
+    <string name="north">N</string>
+    <string name="map">Map</string>
+    <string name="location">Boulder, CO</string>
+    <string name="quit">Quit</string>
 </resources>

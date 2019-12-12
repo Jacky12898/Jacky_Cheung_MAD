@@ -11,24 +11,27 @@
         android:id="@+id/levelOneButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/newColorPrimaryDark"
         android:onClick="StartLevelOne"
         android:text="@string/levelOne"
+        app:layout_constraintBottom_toTopOf="@+id/levelTwoButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/levelTwoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="@string/levelTwo"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/newColorPrimaryDark"
         android:onClick="StartLevelTwo"
+        android:text="@string/levelTwo"
+        app:layout_constraintBottom_toTopOf="@+id/exitButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/levelOneButton" />
 
     <Button
@@ -36,18 +39,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="@string/exit"
+        android:layout_marginEnd="50dp"
         android:background="@color/newColorPrimaryDark"
         android:onClick="exit"
+        android:text="@string/exit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/levelTwoButton" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
-        android:layout_height="230dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/levelTwoButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/puzzle_ui_logo" />
