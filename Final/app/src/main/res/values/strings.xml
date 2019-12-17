@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CheungFinal</string>
+    <string name="title">Burrito Builder</string>
+    <string name="toggleMeat">Meat</string>
+    <string name="toggleVeggie">Veggie</string>
+    <string name="radioBurrito">Burrito</string>
+    <string name="radioTaco">Taco</string>
+    <string name="switchGluten">Gluten-free</string>
+    <string name="buttonBuild">Build</string>
+    <string name="name">Name</string>
+    <string name="findLocation">Find Location</string>
+    <string-array name="locations">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
+
+    <string name="buttonMap">Map</string>
+    <string name="buttonWebsite">Website</string>
+</resources>
